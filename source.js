@@ -34,8 +34,11 @@ function toggleOnHover(event) {
 }
 
 function getGridDimensions() {
-    var input = prompt("Please enter grid size as an integer:")
-    num = Number(input)
+    let num = 101
+    while (num > 100) {
+        var input = prompt("Please enter grid size as an integer (max: 100):")
+        num = Number(input)
+    }
     setGrid(num)
 }
 
