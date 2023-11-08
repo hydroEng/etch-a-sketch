@@ -48,6 +48,7 @@ function setGrid(size) {
     for (let i = 0; i < size; i++) {
         const row = document.createElement('div')
         row.style.display = "flex"
+        row.style.flex = '1'
         for (let j = 0; j < size; j++) {
             const cell = document.createElement('div')
             styleCell(cell, i, j, size)
